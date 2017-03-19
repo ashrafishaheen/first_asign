@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background:url("image/bg3.jpg");
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Jim Nightshade', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: rgba(255,0,0,1);
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family: 'Jim Nightshade', cursive;
+  font-size: 40px;
+  text-align: center;
+  color: rgba(255,0,0,.9);
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  font-family: 'Indie Flower', cursive;
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255,255,0,.9);
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("image/sand2.jpg");
+}
+.second{
+  background-image: url("image/shahi.jpg");
+}
+.dessert{
+  background-image: url("image/cake.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+a{
+  color:rgba(255,0,0,1);
+}
+#blog{
+  float:right;
+}
+#blog2{
+  margin-left: 470px;
+}
+ul{
+  
+  background-color: rgba(0,0,0,.9);
+  height: 25px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+li{
+  display: inline;
+  padding: 0px 0 0 40px;
+  
+}
+#a1{
+  color:rgba(255,255,0,.9);
+}
+</style>
+
+</head>
+
+<body>
+<h1>Shaikh's Corner</h1>
+<marquee direction="left" behavior="scrol"><h2>A source to learn Yummy Food</h2></marquee>
+<ul id="ul1"><li><a href="https://www.youtube.com/channel/UCa48Lqnz7gVd9W2QHPPWMRw" id="a1"> Watch Videos at Youtube</a></li>
+<li> <a href="https://www.facebook.com/shaikhscorner96/" id="a1">Like Us on Facebook</a></li>
+<li><a href="https://twitter.com/ashrafishaikh3" id="a1">Follow on Twitter</a></li>
+</ul>
+<div class="first">
+  <p>Cheese Sandwich<span class="price"><a href="https://youtu.be/zyc-68xd7gg">Click for Video</a></span><br />
+  <small>A cheese sandwich is a basic sandwich generally made with one or more varieties of cheese on any sort of bread, such as flatbread or wheat bread, that may include spreads such as butter or mayonnaise.<br>
+ <a href="https://www.facebook.com/shaikhscorner96/">Facebook</a><a href="http://shaikhscorner.blogspot.in/" id="blog">Blog</a>
+ </small></p>
+</div>
+
+<div class="second">
+  <p>Shahi Tukda <span class="price"><a href="https://youtu.be/XShvpl8TEaQ">Click For Video</a></span><br />
+  <small>Shahi Tukda
+Double ka meetha (Urdu: شاہی ٹکڑا) is a bread pudding dessert of fried bread slices soaked in hot milk with spices, including saffron and cardamom,.
+ Double ka meetha is a dessert of Hyderabad, Telangana.
+<br>
+ <a href="https://www.facebook.com/shaikhscorner96/">Facebook</a><a href="http://shaikhscorner.blogspot.in/" id="blog">Blog</a>
+ </small></p>
+</div>
+  
+<div class="dessert">
+  <p>Chocolate Cake <span class="price"><a href="https://youtu.be/3UJ6JxnAm6o">Click For Video</a></span><br />
+  <small>
+Chocolate cake is a form of sweet dessert that is typically baked.But today we are sharing a recipe for a chocolate cake without an oven. It hardly takes 50-60 minutes. It is very and tasty cake for any party.<br>
+<a href="https://www.facebook.com/shaikhscorner96/">Facebook</a><a href="http://shaikhscorner.blogspot.in/" id="blog2">Blog</a>
+ </small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
